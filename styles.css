@@ -1,6 +1,6 @@
 :root {
    --sidebar-blue: rgb(41, 157, 224);
-   --background-gray: rgb(200, 200, 200);
+   --background-gray: rgb(212, 210, 210);
    --card-yellow: rgb(255, 193, 24);
 }
 
@@ -15,6 +15,70 @@ body {
    display: grid;
 
    grid-template-columns: 1fr 4fr;
+}
+
+.header-container {
+   display: grid;
+   padding: 16px 40px;
+   grid-template-rows: min-content;
+   height: min-content;
+}
+
+.search-container {
+   display: grid;
+   grid-template-columns: 5fr 3fr;
+   height: min-content;
+}
+
+.search-bar {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.search-bar input {
+   height: 30px;
+   flex: 1;
+
+   border: none;
+   border-radius: 15px;
+   background-color: var(--background-gray);
+}
+
+.profile-bar {
+   display: flex;
+   gap: 50px;
+   align-items: center;
+   justify-content: end;
+}
+
+.search-icon,
+.notification-icon {
+   width: 30px;
+}
+.profile-image {
+   width: 50px;
+}
+
+.nav-container {
+   display: flex;
+   justify-content: space-between;
+   height: min-content;
+}
+
+.greeting-bar {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+.greeting-bar img {
+   width: 70px;
+   height: 70px;
+}
+
+.nav-bar {
+   display: flex;
+   gap: 20px;
+   align-items: center;
 }
 
 .sidebar-container {
