@@ -1,9 +1,10 @@
 :root {
    --sidebar-blue: rgb(41, 157, 224);
-   --background-gray: rgb(220, 220, 220);
    --card-yellow: rgb(255, 193, 24);
    --text-white: rgb(245, 245, 245);
+   --background-gray: rgb(220, 220, 220);
    --description-gray: rgb(111, 111, 111);
+   --divider-gray: rgb(180, 180, 180);
 }
 
 body {
@@ -221,20 +222,70 @@ p {
 }
 .project-options {
    display: flex;
-   gap: 10px;
+   gap: 20px;
    justify-content: end;
 }
 .project-options img {
    width: 22px;
+   cursor: pointer;
 }
 
 .announcement-trending-sidebar {
    padding-left: 15px;
 }
+
+.announcements-container {
+   margin-bottom: 30px;
+}
 .announcements-card {
    padding: 20px;
    background-color: var(--text-white);
    border-radius: 10px;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   gap: 20px;
+}
+.announcement-header {
+   font-size: 16px;
+   font-weight: 500;
+}
+.announcement-details {
+   font-size: 14px;
+   color: var(--description-gray);
+}
+.horizontal-divider {
+   height: 1px;
+   background-color: var(--divider-gray);
+}
+
+.trending-card {
+   background-color: var(--text-white);
+   padding: 20px;
+   border-radius: 10px;
+
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.trending-profile {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+.trending-profile img {
+   width: 50px;
+   border-radius: 400px;
+}
+.trending-profile-name {
+   font-weight: 500;
+   font-size: 15px;
+   margin-bottom: 2px;
+}
+.trending-profile-description {
+   font-size: 14px;
+   color: var(--description-gray);
 }
 
 .projects-container-title,
