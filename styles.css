@@ -231,6 +231,11 @@ p {
 .announcement-trending-sidebar {
    padding-left: 15px;
 }
+.announcements-card {
+   padding: 20px;
+   background-color: var(--text-white);
+   border-radius: 10px;
+}
 
 .projects-container-title,
 .announcements-container-title,
